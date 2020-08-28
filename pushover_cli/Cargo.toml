@@ -16,4 +16,4 @@ path = "source/main.rs"
 
 [dependencies]
 clap = "2.33"
-pushover_api = { path = "../pushover_api" }
+pushover_api = { path = "../pushover_api", version = "0.1" }
