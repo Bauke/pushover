@@ -1,0 +1,22 @@
+# https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[package]
+name = "pushover_api"
+description = "A Rust library to interact with the Pushover.net API."
+version = "0.1.0"
+authors = ["Bauke <me@bauke.xyz>"]
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/Bauke/pushover"
+readme = "../README.md"
+edition = "2018"
+
+[lib]
+path = "source/lib.rs"
+
+[dependencies]
+anyhow = "1.0"
+lazy_static = "1.4"
+reqwest = { version = "0.10", features = ["blocking"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+serde_repr = "0.1"

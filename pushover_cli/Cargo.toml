@@ -1,0 +1,19 @@
+# https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[package]
+name = "pushover_cli"
+description = "A Rust command-line tool to interact with the Pushover.net API."
+version = "0.1.0"
+authors = ["Bauke <me@bauke.xyz>"]
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/Bauke/pushover"
+readme = "../README.md"
+edition = "2018"
+
+[[bin]]
+name = "pushover"
+path = "source/main.rs"
+
+[dependencies]
+clap = "2.33"
+pushover_api = { path = "../pushover_api" }
